@@ -78,3 +78,6 @@ This can be used on avid music listeners / maybe then develop a side that can be
 * Forced Log-in -> Account creation if no log in is available
 * Music Selection -> Tinder swiping screen -> Final album
 * Youtube -> Listening to recently albums if need be.
+
+### 4. Rough Wireframe
+![The wireframe diagram](https://github.com/cstepin/CapstoneProject/blob/main/Capstone%20Project%20Wireframe.jpg)
