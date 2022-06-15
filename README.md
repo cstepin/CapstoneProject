@@ -81,3 +81,40 @@ This can be used on avid music listeners / maybe then develop a side that can be
 
 ### 4. Rough Wireframe
 ![The wireframe diagram](https://github.com/cstepin/CapstoneProject/blob/main/Capstone%20Project%20Wireframe.jpg)
+
+### 5. Week-by-week walkthrough
+
+Week 0 — plot out course of project
+
+Week 1 — 
+- Create sign-up or login
+- Activity that brings you to an “input artist” window
+- Start researching how to create models to give recommendations based on the TWO artists inputted
+- For now, try to bring up other music suggestions in the same genre
+- Implement another activity that has a recycler view of the song suggestions 
+
+Week 2 *Goal* — have the ability to swipe on song suggestions
+- Figure out how to have “swipe left” or “swipe right” technology
+- Keep the list of swipe rights to be there in the next activity
+- Try to build a model / work on recommendations?
+- 
+
+Week 3
+- Try to understand how to do recommendations
+
+Week 4 *Goal* — have a mostly-complete app
+- Figure out how to play bits of sound / YouTube or Spotify music in the swiping window
+- (Maybe) figure out how to export the album into a different window
+
+Week 5
+- Style the app to make it look nice
+- Buffer time
+
+Week 6 *Goal* have the app look like a real app and have at least one stretch goal finished
+- Stretch goal: Trying to look at past albums
+- Stretch goal: Trying to play the “most repeated” part of videos
+
+Week 7:
+- Stretch goal: Make the artists “anonymous” when playing the snippets
+- Polishing the app
+
