@@ -118,3 +118,50 @@ Week 7:
 - Stretch goal: Make the artists “anonymous” when playing the snippets
 - Polishing the app
 
+### 6. Models
+
+
+Models
+
+User
+Property	Type	Description
+objectId	String	unique id for the user (default field)
+Username           	String	User’s username to log in
+Password	String	User’s password to log in
+Artists	Array of String	List of artists that user listens to
+createdAt	DateTime	date when User is created (default field)
+updatedAt	DateTime	date when post is last updated (default field)
+
+Artist
+Property	Type	Description
+objectId	String	unique id for the artist (default field)
+Top Songs	Array of String	Top 5 songs of the artist.
+createdAt	DateTime	date when User is created (default field)
+updatedAt	DateTime	date when post is last updated (default field)
+
+Outline Parse Network Requests
+
+* Log-in Screen
+    * (Read/GET) Log in a user if the user enters correct username and password
+    * (Create/POST) Create a new user if they choose to sign up
+* Entering-artists screen
+    * (Update/PUT) Update user’s artists if they enter new artists
+* Generating songs screen
+    * (Read/GET) Check the artists the user has to try not duplicate artists
+
+let query = PFQuery(className:”User”)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (artists: [PFObject]?, error: Error?) in
+   if let error = error { 
+      print(error.localizedDescription)
+   } else if let artists = artists {
+      print("Successfully retrieved \(artists.count) artists.”)
+  // TODO: Copy the array over to then check against other users’ artists
+   }
+}
+
+    * (Read/GET) Check the artists other users have to try and suggest some of the artists not in the overlap
+    * (Read/GET) Use Spotify / Deezer API to find top x songs associated with the new artists.
+* Final finished album Screen 
+    * (Update/PUT) Update user artists with the new artists to whom they like to listen.
+
